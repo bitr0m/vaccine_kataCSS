@@ -1,263 +1,384 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Boxicons -->
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <!-- Style -->
-  <link rel="stylesheet" href="./style/style.css" type="text/css">
-  <!-- Reset CSS -->
-  <link rel="stylesheet" href="./style/app.css" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box-icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="./style/style.css" type="text/css" />
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./style/app.css" type="text/css" />
 
-  <title>Vaccination COVID-19</title>
-</head>
-<body>
-  <header class="navbar">
-    <span class="logo_name"><a href="index.html"></a> Vaccination</span>
-    <nav class="menu">
-      <ul class="nav_links">
-        <li><a href="#">Database</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Regulation</a></li>
-      </ul>
-    </nav>
-    <a href="#" class="butt"><button>Hoax Buster</button></a>
-  </header>
-  <main class="main-container">
-    <article class="content1">
-      <section class="sec_art">
-        <h1 class="title">Fight Virus <br>
-        With Vaccines</h1>
-        <p class="text-description">Let's stop this pandemic by killing the virus <br> with a vaccine, don't let yourself and your <br> family get infected</p>
-        <ul>
-          <li class="item1"><i  class='bx bxs-check-shield icon' style='color:#ffd012' ></i>Best protection</li>
-          <li class="item2"><i class='bx bxs-star icon' style='color:#ffd012'  ></i>Selected Vacciones</li>
-        </ul>
-      </section>
-      <!-- Ajustar tamano de imagen  -->
-      <figure class="image-1">
-        <img src="./assets/img/vaccine1.jpg" alt="Vaccine" class="va1">
-      </figure>
-      <section class="sec-schedule">
-        <span class="sch"><i class='bx bxs-time-five iconC' style='color:#3353d1' ></i>Schedule your vaccinations</span>
-        <form action="#" method="get">
+    <title>Vaccination COVID-19</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__logo">
+          <h1 class="logo_name">Vaccination</h1>
+        </div>
+
+        <div class="header__actions">
+          <nav class="header__nav">
+            <a class="nav__item" href="#">Database</a>
+            <a class="nav__item" href="#">Education</a>
+            <a class="nav__item" href="#">News</a>
+            <a class="nav__item" href="#">Regulation</a>
+          </nav>
+
+          <div class="header__btn">
+            <button class="btn">Hoax Buster</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Hero Content -->
+      <section class="container hero__inner">
+        <section class="hero__content">
+          <h1 class="title">
+            Fight Virus <br />
+            With Vaccines
+          </h1>
+          <p class="text-description">
+            Let's stop this pandemic by killing the virus <br />
+            with a vaccine, don't let yourself and your <br />
+            family get infected
+          </p>
+          <ul class="items">
+            <li class="item">
+              <i class="bx bxs-check-shield icon" style="color: #ffd012"></i
+              >Best protection
+            </li>
+            <li class="item">
+              <i class="bx bxs-star icon" style="color: #ffd012"></i>Selected
+              Vaccines
+            </li>
+          </ul>
+        </section>
+
+        <section class="hero__image"></section>
+        <!-- Form Div -->
+        <section class="sec-schedule">
+          <span class="sch"
+            ><i class="bx bxs-time-five iconC" style="color: #3353d1"></i
+            >Schedule your vaccinations</span
+          >
+          <form action="#" method="get">
             <div class="form-group">
-              <label for="location"><i class='bx bxs-map bx-flip-horizontal iconC' style='color:#3353d1' ></i>Location</label>
-              <input type="text" name="location" class="form-control" maxlength="20" placeholder="Jakarta Utara">
+              <label for="location"
+                ><i
+                  class="bx bxs-map bx-flip-horizontal iconC"
+                  style="color: #3353d1"
+                ></i
+                >Location</label
+              >
+              <input
+                type="text"
+                name="location"
+                class="form-control"
+                maxlength="20"
+                placeholder="Jakarta Utara"
+              />
             </div>
             <div class="form-group">
-              <label for="date"><i class='bx bxs-calendar iconC' style='color:#3353d1' ></i>Date</label>
-              <input type="text" name="date" class="form-control" placeholder="08 July 2021">
+              <label for="date"
+                ><i class="bx bxs-calendar iconC" style="color: #3353d1"></i
+                >Date</label
+              >
+              <input
+                type="text"
+                name="date"
+                class="form-control"
+                placeholder="08 July 2021"
+              />
             </div>
             <div class="form-group">
-              <label for="type"><i class='bx bxs-edit-alt iconC' style='color:#3353d1' ></i>Vaccine Type</label>
-              <input type="text" name="type"
-              class="form-control" placeholder="Moderna" >
+              <label for="type"
+                ><i class="bx bxs-edit-alt iconC" style="color: #3353d1"></i
+                >Vaccine Type</label
+              >
+              <input
+                type="text"
+                name="type"
+                class="form-control"
+                placeholder="Moderna"
+              />
             </div>
             <button class="sub">Submit</button>
-        </form>
-      </section>
-    </article>
-    <div class="logos">
-      <figure class="logo">
-        <img src="./assets/logos/astrazeneca-1.svg" alt="logo astrazeneca" class="logo1">
-      </figure>
-      <figure class="logo">
-        <img src="./assets/logos/sinovac-seeklogo.com.svg" alt="logo sinovac" class="logo2">
-      </figure>
-      <figure class="logo">
-        <img src="./assets/logos/pfizer-2021-.svg" alt="logo pfizer" class="logo3">
-      </figure>
-      <figure class="logo">
-        <img src="./assets/logos/moderna-logo.svg" alt="logo moderna" class="logo4">
-      </figure>
-    </div>
-    <article class="content2">
-      <div class="bene_t">
-        <h2>Why should I vaccine?</h2>
-        <p>In order to avoid any doubts about getting the COVID-19 <br>
-        vaccine, identify the following 4 benefits of COVID-19
-        <br>
-        vaccinaton :
-        </p>
-      </div>
-      <section class="benefits">
-        <div class="element1">
-          <i class='bx bx-slider-alt iconE' style='color:#2f4fcd'  ></i>
-          <span class="el-t">Minimize the spread of viruses</span>
-          <p class="p-element">Vaccine has been proven <br> 
-          effective to prevent someone <br>
-          from getting infected with <br>
-          Coronavirus</p>
-        </div>
-        <div class="element2">
-          <i class='bx bxs-check-shield iconE' style='color:#2f4fcd' ></i>
-          <span class="el-t">Forming antibodies</span>
-          <p class="p-element">COVID-19 vaccine proven to <br>
-          help shope antibody <br>
-          response for immune system</p>
-        </div>
-        <div class="element1">
-          <i class='bx bxs-group iconE' style='color:#2f4fcd' ></i>
-          <span class="el-t">Protecting people nearby</span>
-          <p class="p-element">The benefits of COVID-19 <br>
-          vaccination are the vaccine <br>
-          that we get con also help <br>
-          protect people around us</p>
-        </div>
-        <div class="element1">
-          <i class='bx bxs-chart iconE' style='color:#2f4fcd' ></i>
-          <span class="el-t">Creating group immunity</span>
-          <p class="p-element">COVID-19 vaccination is also <br>
-          beneficial for creating group <br>
-          immunity or heard immunity</p>
-        </div>
-      </section>
-    </article>
-    <article class="content3">
-      <div class="img-back">
-        <figure class="img-f">
-          <img src="./assets/img/vaccine2.png" alt="person with mask" class="img-w">
-        </figure>
-        <div class="img-v"></div>
-      </div>
-      <div class="pre-cont">
-        <section class="preparations">
-          <h2>Preparations Before Vaccine</h2>
-          <p>the success of vaccines is strongly influenced by the <br> strength of the body's immune system. Therefore, there are <br> several things that can be tried to make the COVID-19 <br> vaccine work :</p>
+          </form>
         </section>
-        <section class="list_pre">
-          <div class="ele1">
-            <i class='bx bxs-shield-x iconC' style='color:#2f4fcd' ></i>
-            <span class="pre-t">Avoid alcoholic beverages</span>
-            <div class="iconR1">
-              <i class='bx bxs-down-arrow' style='color:#2f4fcd' ></i>
-            </div>
+      </section>
+      <!-- Logo's Vaccines -->
+      <div class="container logos">
+        <div class="logos__item logo--muted">
+          <img
+            src="./assets/logos/astrazeneca-1.svg"
+            alt="AstraZeneca logo"
+            class="logo--align"
+          />
+        </div>
+
+        <div class="logos__item logo--muted">
+          <img
+            src="./assets/logos/sinovac-seeklogo.com.svg"
+            alt="Sinovac logo"
+          />
+        </div>
+
+        <div class="logos__item logo--muted">
+          <img src="./assets/logos/pfizer-2021-.svg" alt="Pfizer logo" />
+        </div>
+
+        <div class="logos__item logo--muted">
+          <img src="./assets/logos/moderna-logo.svg" alt="Moderna logo" />
+        </div>
+      </div>
+      <article class="content2">
+        <div class="bene_t">
+          <h2>Why should I vaccine?</h2>
+          <p>
+            In order to avoid any doubts about getting the COVID-19 <br />
+            vaccine, identify the following 4 benefits of COVID-19
+            <br />
+            vaccinaton :
+          </p>
+        </div>
+        <section class="benefits">
+          <div class="element1">
+            <i class="bx bx-slider-alt iconE" style="color: #2f4fcd"></i>
+            <span class="el-t">Minimize the spread of viruses</span>
+            <p class="p-element">
+              Vaccine has been proven <br />
+              effective to prevent someone <br />
+              from getting infected with <br />
+              Coronavirus
+            </p>
           </div>
-          <div class="ele2">
-            <div class="iconUp">
-              <i class='bx bxs-x-square iconC' style='color:#2f4fcd'  ></i>
-              <span class="pre-t">Avoid stress</span>
-              <i class='bx bxs-up-arrow' style='color:#6d7b93' id="ri-ght" ></i>
-            </div>
-            <p class="para-g">Stress has a profound effect on immune work. <br> Moreover, prolonged stress can increase cortisol <br> production and oxidative stress in the body.</p>
+          <div class="element2">
+            <i class="bx bxs-check-shield iconE" style="color: #2f4fcd"></i>
+            <span class="el-t">Forming antibodies</span>
+            <p class="p-element">
+              COVID-19 vaccine proven to <br />
+              help shope antibody <br />
+              response for immune system
+            </p>
           </div>
-          <div class="ele1">
-            <i class='bx bxs-bar-chart-square iconC' style='color:#2f4fcd' ></i>
-            <span class="pre-t">Eat healthy food</span>
-            <div class="iconR3">
-              <i class='bx bxs-down-arrow' style='color:#2f4fcd' ></i>
-            </div>
+          <div class="element1">
+            <i class="bx bxs-group iconE" style="color: #2f4fcd"></i>
+            <span class="el-t">Protecting people nearby</span>
+            <p class="p-element">
+              The benefits of COVID-19 <br />
+              vaccination are the vaccine <br />
+              that we get con also help <br />
+              protect people around us
+            </p>
           </div>
-          <div class="ele1">
-            <i class='bx bxs-check-square iconC' style='color:#2f4fcd' ></i>
-            <span class="pre-t">Get enough sleep</span>
-            <div class="iconR4">
-              <i class='bx bxs-down-arrow' style='color:#2f4fcd' ></i>
-            </div>
-          </div>
-          <div class="ele1">
-            <i class='bx bxs-heart iconC' style='color:#2f4fcd' ></i>
-            <span class="pre-t">Exercise or physical activity</span>
-            <div class="iconR5">
-              <i class='bx bxs-down-arrow' style='color:#2f4fcd' ></i>
-            </div>
+          <div class="element1">
+            <i class="bx bxs-chart iconE" style="color: #2f4fcd"></i>
+            <span class="el-t">Creating group immunity</span>
+            <p class="p-element">
+              COVID-19 vaccination is also <br />
+              beneficial for creating group <br />
+              immunity or heard immunity
+            </p>
           </div>
         </section>
-      </div>
-    </article>
-    <article class="content4">
-      <section class="contacts">
-        <div class="desc-sec">
-          <h2>Emergency Contact</h2>
-          <p>Contact one of the contacts below if you or your family feel <br>
-          unwell and have similar symptoms such as Covid-19, make <br>
-          sure you also take care of yourself before reporting to us :</p>
+      </article>
+      <article class="content3">
+        <div class="img-back">
+          <figure class="img-f">
+            <img
+              src="./assets/img/vaccine2.png"
+              alt="person with mask"
+              class="img-w"
+            />
+          </figure>
+          <div class="img-v"></div>
         </div>
-        <div class="fila">
-          <div class="columna">
-            <i class='bx bxs-phone-call iconE' style='color:#2f4fcd'  ></i>
-            <p><span class="el-t2">Call</span>
-            <span class="min_num"><br> 021.123.145.14</span></p>
-            <button>Call Now</button>
+        <div class="pre-cont">
+          <section class="preparations">
+            <h2>Preparations Before Vaccine</h2>
+            <p>
+              the success of vaccines is strongly influenced by the <br />
+              strength of the body's immune system. Therefore, there are <br />
+              several things that can be tried to make the COVID-19 <br />
+              vaccine work :
+            </p>
+          </section>
+          <section class="list_pre">
+            <div class="ele1">
+              <i class="bx bxs-shield-x iconC" style="color: #2f4fcd"></i>
+              <span class="pre-t">Avoid alcoholic beverages</span>
+              <div class="iconR1">
+                <i class="bx bxs-down-arrow" style="color: #2f4fcd"></i>
+              </div>
+            </div>
+            <div class="ele2">
+              <div class="iconUp">
+                <i class="bx bxs-x-square iconC" style="color: #2f4fcd"></i>
+                <span class="pre-t">Avoid stress</span>
+                <i
+                  class="bx bxs-up-arrow"
+                  style="color: #6d7b93"
+                  id="ri-ght"
+                ></i>
+              </div>
+              <p class="para-g">
+                Stress has a profound effect on immune work. <br />
+                Moreover, prolonged stress can increase cortisol <br />
+                production and oxidative stress in the body.
+              </p>
+            </div>
+            <div class="ele1">
+              <i
+                class="bx bxs-bar-chart-square iconC"
+                style="color: #2f4fcd"
+              ></i>
+              <span class="pre-t">Eat healthy food</span>
+              <div class="iconR3">
+                <i class="bx bxs-down-arrow" style="color: #2f4fcd"></i>
+              </div>
+            </div>
+            <div class="ele1">
+              <i class="bx bxs-check-square iconC" style="color: #2f4fcd"></i>
+              <span class="pre-t">Get enough sleep</span>
+              <div class="iconR4">
+                <i class="bx bxs-down-arrow" style="color: #2f4fcd"></i>
+              </div>
+            </div>
+            <div class="ele1">
+              <i class="bx bxs-heart iconC" style="color: #2f4fcd"></i>
+              <span class="pre-t">Exercise or physical activity</span>
+              <div class="iconR5">
+                <i class="bx bxs-down-arrow" style="color: #2f4fcd"></i>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+      <article class="content4">
+        <section class="contacts">
+          <div class="desc-sec">
+            <h2>Emergency Contact</h2>
+            <p>
+              Contact one of the contacts below if you or your family feel
+              <br />
+              unwell and have similar symptoms such as Covid-19, make <br />
+              sure you also take care of yourself before reporting to us :
+            </p>
           </div>
-          <div class="columna">
-            <i class='bx bxs-message-rounded-dots iconE' style='color:#2f4fcd' ></i>
-            <p><span class="el-t2">Chat</span>
-            <span class="min_num"><br> 021.123.145.14</span></p>
-            <button class="chatnow">Chat Now</button>
+          <div class="fila">
+            <div class="columna">
+              <i class="bx bxs-phone-call iconE" style="color: #2f4fcd"></i>
+              <p>
+                <span class="el-t2">Call</span>
+                <span class="min_num"
+                  ><br />
+                  021.123.145.14</span
+                >
+              </p>
+              <button>Call Now</button>
+            </div>
+            <div class="columna">
+              <i
+                class="bx bxs-message-rounded-dots iconE"
+                style="color: #2f4fcd"
+              ></i>
+              <p>
+                <span class="el-t2">Chat</span>
+                <span class="min_num"
+                  ><br />
+                  021.123.145.14</span
+                >
+              </p>
+              <button class="chatnow">Chat Now</button>
+            </div>
+          </div>
+          <div class="fila">
+            <div class="columna">
+              <i class="bx bxs-video iconE" style="color: #2f4fcd"></i>
+              <p>
+                <span class="el-t2">Video Call</span>
+                <span class="min_num"
+                  ><br />
+                  021.123.145.14</span
+                >
+              </p>
+              <button>Video Call Now</button>
+            </div>
+            <div class="columna">
+              <i class="bx bxs-chat iconE" style="color: #2f4fcd"></i>
+              <p>
+                <span class="el-t2">Message</span>
+                <span class="min_num"
+                  ><br />
+                  021.123.145.14</span
+                >
+              </p>
+              <button>Message Now</button>
+            </div>
+          </div>
+        </section>
+        <div class="img-2">
+          <figure>
+            <img src="./assets/img/vaccine3.png" alt="doctor" class="img-d" />
+          </figure>
+          <div class="img-v2"></div>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <div class="grid_lay">
+        <div class="item3">
+          <h3>Vaccination</h3>
+          <p>
+            Our goal is to help the <br />
+            world free from the <br />
+            ongoing pandemic
+          </p>
+        </div>
+        <div class="sec-footer">
+          <div class="item4">
+            <p>About</p>
+            <ul>
+              <li>About Us</li>
+              <li>Features</li>
+              <li>News & Blog</li>
+            </ul>
+          </div>
+          <div class="item4">
+            <p>Company</p>
+            <ul>
+              <li>How We Work?</li>
+              <li>Capital</li>
+              <li>Security</li>
+            </ul>
+          </div>
+          <div class="item4">
+            <p>Support</p>
+            <ul>
+              <li>FAQs</li>
+              <li>Support Center</li>
+              <li>Contact Us</li>
+            </ul>
           </div>
         </div>
-        <div class="fila">
-          <div class="columna">
-            <i class='bx bxs-video iconE' style='color:#2f4fcd' ></i>
-            <p><span class="el-t2">Video Call</span>
-            <span class="min_num"><br> 021.123.145.14</span></p>
-            <button>Video Call Now</button>
-          </div>
-          <div class="columna">
-            <i class='bx bxs-chat iconE' style='color:#2f4fcd' ></i>
-            <p><span class="el-t2">Message</span>
-            <span class="min_num"><br> 021.123.145.14</span></p>
-            <button>Message Now</button>
-          </div>
-        </div>
-      </section>
-      <div class="img-2">
-        <figure>
-          <img src="./assets/img/vaccine3.png" alt="doctor" class="img-d">
-        </figure>
-        <div class="img-v2"></div>
       </div>
-    </article>
-  </main>
-  <footer>
-    <div class="grid_lay">
-      <div class="item3">
-        <h3>Vaccination</h3>
-        <p>Our goal is to help the <br>
-        world free from the <br>
-        ongoing pandemic</p>
+      <div class="reserved">
+        <ul class="spacing1">
+          <li class="right_r">@2021 Vaccination. All rights reserved</li>
+        </ul>
+        <ul class="spacing">
+          <li class="left_r">Terms & Agreements</li>
+          <li class="left_r">Privacy Policy</li>
+        </ul>
       </div>
-      <div class="sec-footer">
-        <div class="item4">
-          <p>About</p>
-          <ul>
-            <li>About Us</li>
-            <li>Features</li>
-            <li>News & Blog</li>
-          </ul>
-        </div>
-        <div class="item4">
-          <p>Company</p>
-          <ul>
-            <li>How We Work?</li>
-            <li>Capital</li>
-            <li>Security</li>
-          </ul>
-        </div>
-        <div class="item4">
-          <p>Support</p>
-          <ul>
-            <li>FAQs</li>
-            <li>Support Center</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="reserved">
-      <ul class="spacing1">
-        <li class="right_r">@2021 Vaccination. All rights reserved</li>
-      </ul>
-      <ul class="spacing">
-        <li class="left_r">Terms & Agreements</li>
-        <li class="left_r">Privacy Policy</li> 
-      </ul>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
