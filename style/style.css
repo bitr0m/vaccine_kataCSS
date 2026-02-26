@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@700;800&family=Poppins:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
+/* https://excalidraw.com/#json=XLRppBJF_eXrK3zwMThu_,8aGAIsXIF7I_ajRSlOwXTA */
+
 :root {
   --title: "Catamaran", sans-serif;
   --paragraph: "Poppins", sans-serif;
@@ -14,22 +16,42 @@
 }
 
 h1,
-h2 {
+h2,
+.title {
   font-family: var(--title);
   color: var(--headings-color);
+  text-wrap: balance;
 }
 
 p {
   font-family: var(--paragraph);
-  color: var(--secundario) !important;
-  font-weight: 500 !important;
-  font-size: 1rem !important;
+  color: var(--secundario);
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .container {
   width: 100%;
   margin-inline: auto;
   padding-inline: 2rem;
+}
+
+.title {
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.sub-title {
+  font-size: 2.5rem;
+  line-height: 2.5;
+  font-weight: 800;
+}
+
+.text-description {
+  margin-top: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 /* header / nav */
@@ -115,18 +137,6 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.title {
-  font-size: 4rem;
-  line-height: 1.1;
-  font-weight: 800;
-}
-
-.text-description {
-  margin-top: 1.2rem;
-  font-size: 1.1rem;
-  line-height: 1.5;
 }
 
 .items {
@@ -304,20 +314,8 @@ label {
   filter: grayscale(1) opacity(16%);
 }
 
-/* article2 */
-.content2 {
-  margin-top: 2rem;
-  height: 680px;
-  padding: 0px 0px 0px 8%;
-}
-
-h2 {
-  font-size: 2.5rem !important;
-  line-height: 2.5;
-  font-weight: 800 !important;
-}
-
-.content2 .bene_t {
+/* Article / Benefit's  */
+.benefits__inner {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -326,7 +324,7 @@ h2 {
   margin-bottom: 3.5rem;
 }
 
-.content2 .benefits {
+.benefits__card {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
