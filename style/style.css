@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@700;800&family=Poppins:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
-/* https://excalidraw.com/#json=XLRppBJF_eXrK3zwMThu_,8aGAIsXIF7I_ajRSlOwXTA */
+/* https://excalidraw.com/#json=8rJRP7TCN29HcyAh1vMDv,PwahPyopI7_1Mq8mIc6brQ */
 
 :root {
   --title: "Catamaran", sans-serif;
@@ -36,6 +36,11 @@ p {
   padding-inline: 2rem;
 }
 
+.layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .title {
   font-size: 4rem;
   line-height: 1.1;
@@ -43,19 +48,19 @@ p {
 }
 
 .sub-title {
-  font-size: 2.5rem;
-  line-height: 2.5;
+  font-size: 2.2rem;
   font-weight: 800;
+  text-wrap: balance;
 }
 
 .text-description {
   margin-top: 1.2rem;
-  font-size: 1.1rem;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .container__spacing {
-  padding-bottom: 3rem;
+  /* padding-bottom: 3rem; */
+  margin-bottom: 4rem;
 }
 
 /* header / nav */
@@ -127,17 +132,9 @@ p {
   }
 }
 
-/* main */
-
-.hero__inner {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  /* gap: clamp(2rem, 5vw, 4rem); */
-}
-
 /* Section / Hero Content */
 .hero__content {
-  padding: 10em 0;
+  padding: 8em 0;
   margin-top: 3px;
   width: 100%;
   display: flex;
@@ -180,11 +177,10 @@ p {
 /* Section / Image */
 
 .hero__image {
-  background-image: url(../assets/img/vaccine1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 850px;
+  background:
+    url(../assets/img/vaccineBg.png) bottom / cover no-repeat,
+    linear-gradient(to left, #1f6fbf, #3aa0f3);
+  min-height: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -319,12 +315,9 @@ label {
   filter: grayscale(1) opacity(16%);
 }
 
-/* Article / Benefit's  */
+/* Section / Benefit's  */
 .benefits__inner {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   line-height: 1.4;
   margin-bottom: 3rem;
 }
@@ -374,6 +367,7 @@ label {
 
 .card__title {
   font-family: var(--paragraph);
+  color: var(--sub-title-color);
   font-weight: 500;
   font-size: 1.2rem;
   margin-bottom: 1rem;
@@ -389,86 +383,44 @@ label {
   box-shadow: 0px 9px 5px -2px rgba(223, 231, 255, 1);
 }
 
-/* Article / Preparations */
-.content3 {
-  display: flex;
-  flex-direction: row;
-  height: 800px;
+/* Section / Preparations */
+.preparations__image {
+  background:
+    url(../assets/img/vaccine2.png) bottom / 180% no-repeat,
+    linear-gradient(to left, #1f6fbf, #3aa0f3) bottom / 100% 60% no-repeat;
+  min-height: 720px;
 }
 
-/* div1 */
-.img-back {
-  width: 50%;
+.preparations__content {
+  margin-top: 1em;
+  padding-bottom: 4em;
 }
 
-.img-v {
-  width: 570px;
-  height: 465px;
-  background: linear-gradient(to left, #0072ff, #00c6ff);
-  position: absolute;
-  top: 2140px;
-  right: 0;
-  left: 0;
-}
-
-.img-w {
-  position: relative;
-  width: 100%;
-  height: 642px;
-  object-fit: cover;
-  object-position: -219px 0px;
-  z-index: 1;
-  top: 124px;
-  right: 0;
-  left: 0;
-}
-
-/* div2 */
-.pre-cont {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-
-.preparations {
-  margin-bottom: 4rem;
-}
-
-.preparations > h2 {
-  font-size: 42px !important;
-}
-
-.preparations > p {
-  font-size: 18px !important;
-  line-height: 1.8;
-}
-
-.ele1 {
+.list__element {
   display: flex;
   align-items: center;
-  width: 460px;
-  height: 56px;
-  border: 1px solid rgb(246, 246, 246);
-  border-radius: 5px;
-  background-color: white;
-  margin-bottom: 1.3rem;
-  padding-left: 25px;
+  justify-content: center;
+  border: 1px solid rgb(247, 246, 246);
+  border-radius: 1px;
+  margin-bottom: 1.3em;
+  padding: 0.6rem 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.ele2 {
-  display: flex;
+.modal {
   flex-direction: column;
-  /* align-items: center; */
-  width: 460px;
-  height: 160px;
   box-shadow: 0px 40px 20px -35px rgba(223, 231, 255, 1);
-  border: 3px solid white;
-  border-radius: 5px;
-  background-color: white;
-  margin-bottom: 1rem;
-  padding-left: 25px;
 }
-/* icono de cada fila */
+
+/* Content Card / Inner */
+.card__title--modal-title {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
 .iconR1 {
   margin-left: 120px;
 }
@@ -542,6 +494,7 @@ label {
   font-weight: 400 !important;
   margin-left: 43px;
 }
+/* ----------------------------------- */
 /* article4 */
 .content4 {
   display: flex;
@@ -737,12 +690,5 @@ h3 {
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px; /* Estándar clásico */
-  }
-}
-
-/* En Monitores Grandes (más de 1400px de pantalla) */
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px; /* O 1400px si quieres ser más agresivo */
   }
 }
