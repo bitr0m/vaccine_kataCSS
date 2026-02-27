@@ -1,0 +1,10 @@
+# =========================
+# Archivos del Sistema Operativo
+# =========================
+
+# macOS
+.DS_Store
+
+
+# Windows (Flujos de datos alternativos)
+*:Zone.Identifier
