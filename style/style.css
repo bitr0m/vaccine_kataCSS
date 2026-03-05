@@ -14,6 +14,8 @@
 
   --btn-active: var(--primary-color);
   --btn-inactive: rgb(241, 245, 255);
+
+  --footer-bg: #eef3ff;
 }
 
 h1,
@@ -64,6 +66,14 @@ p {
   margin-bottom: 4rem;
 }
 
+.padding--left {
+  padding-left: 0;
+}
+
+.padding--right {
+  padding-right: 0;
+}
+
 /* header / nav */
 .header {
   background: rgb(255, 255, 255);
@@ -82,12 +92,10 @@ p {
   padding: 1.2rem;
 }
 
-.header__logo {
-  .logo_name {
-    font-family: var(--title);
-    font-weight: 800;
-    color: var(--primary-color);
-  }
+.logo__name {
+  font-family: var(--title);
+  font-weight: 700;
+  color: var(--primary-color);
 }
 
 .header__actions {
@@ -510,80 +518,40 @@ label {
 }
 
 /* Footer */
-.grid_lay {
-  background-color: #eef3ff;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  height: 260px;
+.footer__bg {
+  background-color: var(--footer-bg);
 }
 
-.item3 {
-  display: flex;
-  flex-direction: column;
-  padding: 3rem 0 0 15%;
+.footer {
+  margin-top: 3em;
+  min-height: 260px;
 }
 
-h3 {
-  color: var(--principal) !important;
-  font-family: var(--title);
-  font-size: 1.6rem !important;
-  margin-bottom: 1rem !important;
-}
-
-.item3 > p {
-  line-height: 1.6;
-  font-size: 13px !important;
-}
-
-.sec-footer {
+.footer__inner {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
-  margin-top: 1.5rem;
+  gap: 6rem;
 }
 
-.item4 > p {
-  font-family: var(--placeholder);
-  color: var(--headings) !important;
-  font-weight: 700 !important;
-  font-size: 18px !important;
-  line-height: 3;
+.padding__text--right {
+  padding-right: 16rem;
 }
 
-.item4 ul > li {
+ul > li {
   font-family: var(--placeholder);
-  font-size: 13px;
+  font-size: 0.875rem;
   line-height: 2.5;
-  color: var(--secundario);
-  font-weight: 600;
-}
-
-.reserved {
-  background-color: #eef3ff;
-  font-family: var(--paragraph);
-  color: var(--secundario);
-  display: flex;
-  height: 40px;
-}
-
-.reserved ul li {
-  font-size: 13px !important;
-  display: inline;
+  color: var(--secondary-color);
   font-weight: 500;
 }
 
-.spacing1 {
-  padding-left: 6rem;
-}
-
-.spacing {
-  padding-left: 33rem;
-}
-
-.spacing li {
-  padding-left: 20px;
+.reserved {
+  font-family: var(--paragraph);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
 }
 
 /* En Laptops (más de 1200px de pantalla) */

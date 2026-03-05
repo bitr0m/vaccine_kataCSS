@@ -20,7 +20,7 @@
     <header class="header">
       <div class="container header__inner">
         <div class="header__logo">
-          <h1 class="logo_name">Vaccination</h1>
+          <h1 class="logo__name">Vaccination</h1>
         </div>
 
         <div class="header__actions">
@@ -36,7 +36,7 @@
     </header>
     <main>
       <!-- Hero Content -->
-      <section class="container layout container__spacing">
+      <section class="container layout">
         <div class="hero__content">
           <h1 class="title">Fight Virus With Vaccines</h1>
           <p class="text-description">
@@ -189,7 +189,8 @@
           </div>
         </div>
       </section>
-      <section class="container layout container__spacing">
+      <!-- Preparations Content -->
+      <section class="container layout container__spacing padding--left">
         <div class="preparations__image"></div>
         <aside class="container">
           <div class="container__content">
@@ -286,7 +287,8 @@
           </div>
         </aside>
       </section>
-      <section class="container layout container__spacing">
+      <!-- Emer -->
+      <section class="container layout container__spacing padding--right">
         <div class="container">
           <div class="container__content">
             <h2 class="sub-title">Emergency Contact</h2>
@@ -354,35 +356,33 @@
         <div class="emergency__image"></div>
       </section>
     </main>
-    <footer>
-      <div class="grid_lay">
-        <div class="item3">
-          <h3>Vaccination</h3>
-          <p>
-            Our goal is to help the <br />
-            world free from the <br />
-            ongoing pandemic
+    <footer class="footer__bg">
+      <div class="container layout footer">
+        <div class="container">
+          <h2 class="logo__name">Vaccination</h2>
+          <p class="text-description margin--inherit padding__text--right">
+            Our goal is to help the world free from the ongoing pandemic
           </p>
         </div>
-        <div class="sec-footer">
-          <div class="item4">
-            <p>About</p>
+        <div class="footer__inner">
+          <div>
+            <p class="card__title">About</p>
             <ul>
               <li>About Us</li>
               <li>Features</li>
               <li>News & Blog</li>
             </ul>
           </div>
-          <div class="item4">
-            <p>Company</p>
+          <div>
+            <p class="card__title">Company</p>
             <ul>
               <li>How We Work?</li>
               <li>Capital</li>
               <li>Security</li>
             </ul>
           </div>
-          <div class="item4">
-            <p>Support</p>
+          <div>
+            <p class="card__title">Support</p>
             <ul>
               <li>FAQs</li>
               <li>Support Center</li>
@@ -391,14 +391,30 @@
           </div>
         </div>
       </div>
-      <div class="reserved">
-        <ul class="spacing1">
-          <li class="right_r">@2021 Vaccination. All rights reserved</li>
-        </ul>
-        <ul class="spacing">
-          <li class="left_r">Terms & Agreements</li>
-          <li class="left_r">Privacy Policy</li>
-        </ul>
+      <div class="container reserved">
+        <div>
+          <p class="text-description margin--inherit">
+            @2021 Vaccination. All rights reserved
+          </p>
+        </div>
+        <div>
+          <a
+            class="text-description margin--inherit"
+            href="#"
+            noopener
+            noreferrer
+            >Terms & Agreements</a
+          >
+        </div>
+        <div>
+          <a
+            class="text-description margin--inherit"
+            href="#"
+            noopener
+            noreferrer
+            >Privacy Policy</a
+          >
+        </div>
       </div>
     </footer>
   </body>
