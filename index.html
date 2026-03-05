@@ -30,17 +30,14 @@
             <a class="nav__item" href="#">News</a>
             <a class="nav__item" href="#">Regulation</a>
           </nav>
-
-          <div class="header__btn">
-            <button class="btn">Hoax Buster</button>
-          </div>
+          <button class="btn active">Hoax Buster</button>
         </div>
       </div>
     </header>
     <main>
       <!-- Hero Content -->
       <section class="container layout container__spacing">
-        <section class="hero__content">
+        <div class="hero__content">
           <h1 class="title">Fight Virus With Vaccines</h1>
           <p class="text-description">
             Let's stop this pandemic by killing the virus <br />
@@ -57,20 +54,20 @@
               Vaccines
             </li>
           </ul>
-        </section>
+        </div>
 
-        <section class="hero__image"></section>
+        <div class="hero__image"></div>
         <!-- Form Div -->
         <section class="sec-schedule">
           <span class="sch"
-            ><i class="bx bxs-time-five iconC" style="color: #3353d1"></i
+            ><i class="bx bxs-time-five icon-badge" style="color: #3353d1"></i
             >Schedule your vaccinations</span
           >
           <form action="#" method="get">
             <div class="form-group">
               <label for="location"
                 ><i
-                  class="bx bxs-map bx-flip-horizontal iconC"
+                  class="bx bxs-map bx-flip-horizontal icon-badge"
                   style="color: #3353d1"
                 ></i
                 >Location</label
@@ -85,7 +82,10 @@
             </div>
             <div class="form-group">
               <label for="date"
-                ><i class="bx bxs-calendar iconC" style="color: #3353d1"></i
+                ><i
+                  class="bx bxs-calendar icon-badge"
+                  style="color: #3353d1"
+                ></i
                 >Date</label
               >
               <input
@@ -97,7 +97,10 @@
             </div>
             <div class="form-group">
               <label for="type"
-                ><i class="bx bxs-edit-alt iconC" style="color: #3353d1"></i
+                ><i
+                  class="bx bxs-edit-alt icon-badge"
+                  style="color: #3353d1"
+                ></i
                 >Vaccine Type</label
               >
               <input
@@ -147,17 +150,20 @@
             vaccination:
           </p>
         </div>
-        <section class="cards-container">
+        <div class="cards-container">
           <div class="card-element">
-            <i class="bx bx-slider-alt icon-bg" style="color: #2f4fcd"></i>
+            <i class="bx bx-slider-alt icon__bg" style="color: #2f4fcd"></i>
             <span class="card__title">Minimize the spread of viruses</span>
             <p class="card__description">
               Vaccine has been proven effective to prevent someone from getting
               infected with Coronavirus
             </p>
           </div>
-          <div class="card-element">
-            <i class="bx bxs-check-shield icon-bg" style="color: #2f4fcd"></i>
+          <div class="card-element card--active">
+            <i
+              class="bx bxs-check-shield icon--active icon__bg"
+              style="color: #2f4fcd"
+            ></i>
             <h4 class="card__title">Forming antibodies</h4>
             <p class="card__description">
               COVID-19 vaccine proven to help shope antibody response for immune
@@ -165,7 +171,7 @@
             </p>
           </div>
           <div class="card-element">
-            <i class="bx bxs-group icon-bg" style="color: #2f4fcd"></i>
+            <i class="bx bxs-group icon__bg" style="color: #2f4fcd"></i>
             <h4 class="card__title">Protecting people nearby</h4>
             <p class="card__description">
               The benefits of COVID-19 vaccination are the vaccine that we get
@@ -173,7 +179,7 @@
             </p>
           </div>
           <div class="card-element">
-            <i class="bx bxs-chart icon-bg" style="color: #2f4fcd"></i>
+            <i class="bx bxs-chart icon__bg" style="color: #2f4fcd"></i>
             <h4 class="card__title">Creating group immunity</h4>
             <p class="card__description">
               COVID-19 vaccination is also <br />
@@ -181,12 +187,12 @@
               immunity or heard immunity
             </p>
           </div>
-        </section>
+        </div>
       </section>
       <section class="container layout container__spacing">
         <div class="preparations__image"></div>
         <aside class="container">
-          <div class="preparations__content">
+          <div class="container__content">
             <h2 class="sub-title">Preparations Before Vaccine</h2>
             <p class="text-description">
               the success of vaccines is strongly influenced by the strength of
@@ -197,29 +203,38 @@
           <div class="container">
             <div class="list__element">
               <div class="icon-title__container">
-                <i class="bx bxs-shield-x iconC" style="color: #2f4fcd"></i>
+                <i
+                  class="bx bxs-shield-x icon-badge"
+                  style="color: #2f4fcd"
+                ></i>
                 <h5 class="card__title card__title--modal-title">
                   Avoid alcoholic beverages
                 </h5>
               </div>
-              <div class="iconR1">
+              <div>
                 <i class="bx bxs-down-arrow" style="color: #2f4fcd"></i>
               </div>
             </div>
-            <div class="list__element modal">
-              <div class="iconUp">
-                <i class="bx bxs-x-square iconC" style="color: #2f4fcd"></i>
-                <h5 class="card__title card__title--modal-title">
-                  Avoid stress
-                </h5>
-                <i
-                  class="bx bxs-up-arrow"
-                  style="color: #6d7b93"
-                  id="ri-ght"
-                ></i>
+            <div class="modal card--active">
+              <div class="list__element--modal">
+                <div class="icon-title__container">
+                  <i
+                    class="bx bxs-x-square icon-badge icon--active"
+                    style="color: #2f4fcd"
+                  ></i>
+                  <h5 class="card__title card__title--modal-title">
+                    Avoid stress
+                  </h5>
+                </div>
+                <div>
+                  <i
+                    class="bx bxs-up-arrow icon--active"
+                    style="color: #6d7b93"
+                  ></i>
+                </div>
               </div>
-              <div>
-                <p class="card__description">
+              <div class="description--modal">
+                <p class="card__description small-text">
                   Stress has a profound effect on immune work. Moreover,
                   prolonged stress can increase cortisol production and
                   oxidative stress in the body.
@@ -227,108 +242,117 @@
               </div>
             </div>
             <div class="list__element">
-              <i
-                class="bx bxs-bar-chart-square iconC"
-                style="color: #2f4fcd"
-              ></i>
-              <h5 class="card__title card__title--modal-title">
-                Eat healthy food
-              </h5>
-              <div class="iconR3">
+              <div class="icon-title__container">
+                <i
+                  class="bx bxs-bar-chart-square icon-badge"
+                  style="color: #2f4fcd"
+                ></i>
+                <h5 class="card__title card__title--modal-title">
+                  Eat healthy food
+                </h5>
+              </div>
+              <div>
                 <i class="bx bxs-down-arrow" style="color: #2f4fcd"></i>
               </div>
             </div>
             <div class="list__element">
-              <i class="bx bxs-check-square iconC" style="color: #2f4fcd"></i>
-              <h5 class="card__title card__title--modal-title">
-                Get enough sleep
-              </h5>
-              <div class="iconR4">
+              <div class="icon-title__container">
+                <i
+                  class="bx bxs-check-square icon-badge"
+                  style="color: #2f4fcd"
+                ></i>
+                <h5 class="card__title card__title--modal-title">
+                  Get enough sleep
+                </h5>
+              </div>
+              <div>
                 <i class="bx bxs-down-arrow" style="color: #2f4fcd"></i>
               </div>
             </div>
             <div class="list__element">
-              <i class="bx bxs-heart iconC" style="color: #2f4fcd"></i>
-              <h5 class="card__title card__title--modal-title">
-                Exercise or physical activity
-              </h5>
-              <div class="iconR5">
+              <div class="icon-title__container">
+                <i
+                  class="bx bxs-check-square icon-badge"
+                  style="color: #2f4fcd"
+                ></i>
+                <h5 class="card__title card__title--modal-title">
+                  Get enough sleep
+                </h5>
+              </div>
+              <div>
                 <i class="bx bxs-down-arrow" style="color: #2f4fcd"></i>
               </div>
             </div>
           </div>
         </aside>
       </section>
-      <article class="content4">
-        <section class="contacts">
-          <div class="desc-sec">
-            <h2>Emergency Contact</h2>
-            <p>
+      <section class="container layout container__spacing">
+        <div class="container">
+          <div class="container__content">
+            <h2 class="sub-title">Emergency Contact</h2>
+            <p class="text-description">
               Contact one of the contacts below if you or your family feel
-              <br />
-              unwell and have similar symptoms such as Covid-19, make <br />
-              sure you also take care of yourself before reporting to us :
+              unwell and have similar symptoms such as Covid-19, make sure you
+              also take care of yourself before reporting to us :
             </p>
           </div>
-          <div class="fila">
-            <div class="columna">
-              <i class="bx bxs-phone-call iconE" style="color: #2f4fcd"></i>
-              <p>
-                <span class="el-t2">Call</span>
-                <span class="min_num"
-                  ><br />
-                  021.123.145.14</span
-                >
-              </p>
-              <button>Call Now</button>
+          <div class="container__cards--grid">
+            <div class="emergency__card">
+              <div class="item__inner">
+                <i
+                  class="bx bxs-phone-call icon__bg margin--inherit"
+                  style="color: #2f4fcd"
+                ></i>
+                <div>
+                  <h4 class="card__title margin--inherit">Call</h4>
+                  <p class="small-text">021.123.145.14</p>
+                </div>
+              </div>
+              <button class="btn">Call Now</button>
             </div>
-            <div class="columna">
-              <i
-                class="bx bxs-message-rounded-dots iconE"
-                style="color: #2f4fcd"
-              ></i>
-              <p>
-                <span class="el-t2">Chat</span>
-                <span class="min_num"
-                  ><br />
-                  021.123.145.14</span
-                >
-              </p>
-              <button class="chatnow">Chat Now</button>
+            <div class="emergency__card card--active">
+              <div class="item__inner">
+                <i
+                  class="bx bxs-message-rounded-dots icon__bg margin--inherit"
+                  style="color: #2f4fcd"
+                ></i>
+                <div>
+                  <h4 class="card__title margin--inherit">Chat</h4>
+                  <p class="small-text">021.123.145.14</p>
+                </div>
+              </div>
+              <button class="btn active">Chat Now</button>
+            </div>
+            <div class="emergency__card">
+              <div class="item__inner">
+                <i
+                  class="bx bxs-video icon__bg margin--inherit"
+                  style="color: #2f4fcd"
+                ></i>
+                <div>
+                  <h4 class="card__title margin--inherit">Video Call</h4>
+                  <p class="small-text">021.123.145.14</p>
+                </div>
+              </div>
+              <button class="btn">Video Call Now</button>
+            </div>
+            <div class="emergency__card">
+              <div class="item__inner">
+                <i
+                  class="bx bxs-chat icon__bg margin--inherit"
+                  style="color: #2f4fcd"
+                ></i>
+                <div>
+                  <h4 class="card__title margin--inherit">Message</h4>
+                  <p class="small-text">021.123.145.14</p>
+                </div>
+              </div>
+              <button class="btn">Message Now</button>
             </div>
           </div>
-          <div class="fila">
-            <div class="columna">
-              <i class="bx bxs-video iconE" style="color: #2f4fcd"></i>
-              <p>
-                <span class="el-t2">Video Call</span>
-                <span class="min_num"
-                  ><br />
-                  021.123.145.14</span
-                >
-              </p>
-              <button>Video Call Now</button>
-            </div>
-            <div class="columna">
-              <i class="bx bxs-chat iconE" style="color: #2f4fcd"></i>
-              <p>
-                <span class="el-t2">Message</span>
-                <span class="min_num"
-                  ><br />
-                  021.123.145.14</span
-                >
-              </p>
-              <button>Message Now</button>
-            </div>
-          </div>
-        </section>
-        <div class="img-2">
-          <figure>
-            <img src="./assets/img/vaccine3.png" alt="doctor" class="img-d" />
-          </figure>
-          <div class="img-v2"></div>
         </div>
-      </article>
+        <div class="emergency__image"></div>
+      </section>
     </main>
     <footer>
       <div class="grid_lay">
